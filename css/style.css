@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.pcLogo {
+    width: 100px;
+}
+.navbar2{
+    border: solid 10px blue;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:0 15px;
+    border-top: solid 10px orangered;
+    border-left: solid 10px orangered;
+    border-right: solid 10px orangered;
+
+}
+a:hover {
+    background-color: orangered;
+    border: dashed 2px orangered;
+}
+
+
+
+
+
+
+.ultimasNovedades {
+    background-color: blue;
+    color: orangered;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.ultimasNovedades h2 {
+    font-size: 45px;
+}
+.colorBtn {
+    background-color: blue;
+    color: orangered;
+    font-size: 18px;
+}
+
+.colorBtn:hover {
+    background-color: red;
+    color: #fafafa;
+}
+
+
+
+.cardimg {
+   border: blue 10px solid;
+}
+
+.final1 {
+    background-color: blue;
+    padding-bottom: 20px;
+    color: orangered;
+}
+
+
+.final2 {
+    background-color: orangered;
+    padding-top: 20px;
+    color: blue;
+}
