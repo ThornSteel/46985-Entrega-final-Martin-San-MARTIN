@@ -107,3 +107,27 @@ a:hover {
     font-size: 20px;
     color: blue;
 }
+
+.whats {
+    width: 130px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.nosotros {
+    background-color: blue;
+    color: orangered;
+    font-size: 18px;
+}
+.nosotros2 {
+        background-color: orangered;
+        color: blue;
+        font-size: 18px;
+
+}
+
+.acercaDeNosotros{
+    background-image: url(../img/a80cc3a0a3acd9e4db805fb13bbb1524.jpg);
+    background-repeat: repeat;
+}
