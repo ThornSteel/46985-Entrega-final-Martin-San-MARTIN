@@ -64,16 +64,16 @@ a:hover {
 }
 
 .final1 {
-    background-color: blue;
+    background-color: orangered;
     padding-bottom: 20px;
-    color: orangered;
+    font-size: 20px;
 }
 
 
 .final2 {
     background-color: orangered;
     padding-top: 20px;
-    color: blue;
+    font-size: 20px;
 }
 
 
@@ -116,18 +116,30 @@ a:hover {
 }
 
 .nosotros {
-    background-color: blue;
+    background-color: black;
     color: orangered;
-    font-size: 18px;
+    font-size: 30px;
 }
 .nosotros2 {
-        background-color: orangered;
-        color: blue;
-        font-size: 18px;
+        background-color: black;
+        color: orangered;
+        font-size: 30px;
 
 }
 
 .acercaDeNosotros{
     background-image: url(../img/a80cc3a0a3acd9e4db805fb13bbb1524.jpg);
     background-repeat: repeat;
+}
+.contrato {
+    border: 2px black solid;
+}
+li {
+    border: 2px black solid;
+}
+
+
+
+.contratoTexto {
+    font-size: 20px;
 }
