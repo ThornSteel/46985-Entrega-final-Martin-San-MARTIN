@@ -152,3 +152,74 @@ li {
     color: orangered;
     font-size: 50px;
 }
+
+
+.contenedor___venta {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 80%;
+  }
+  
+  .centrar___contenedores {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 10%;
+    padding: 0px 30px;
+  }
+  
+  .contenedor___producto---venta {
+    width: 200px;
+    height: 300px;
+    border: 1px solid goldenrod;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 0.5s;
+    margin-bottom: 20px;
+  }
+  
+  .contenedor___producto---venta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px 5px rgba(155, 60, 8, 0.5);
+  }
+  
+  .contenedor___img---venta___producto {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contenedor___img---venta___producto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+  }
+  
+  .contenedor___descripcion {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+
+  .contenedor___paginas {
+    height: 30px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: .5s;
+  }
