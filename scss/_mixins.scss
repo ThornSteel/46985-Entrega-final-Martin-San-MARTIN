@@ -1,6 +1,5 @@
 @import "variables.scss";
-@mixin stylenosotros {
-  background-color: $background-color_4;
-  color: $color_1;
-  font-size: 30px;
+@mixin finales {
+  padding-bottom: 20px;
+  font-size: 20px;
 }

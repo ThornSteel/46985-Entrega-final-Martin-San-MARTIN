@@ -1,6 +1,30 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap";
+/* .fondoIndex {
+    background-color: black;
+} */
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
 body {
   font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(129, 87, 163, 0.532), rgb(70, 70, 186), rgb(142, 167, 189));
+  background-size: 400% 400%;
+  position: relative;
+  animation: cambiar 15s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 * {
@@ -13,27 +37,28 @@ body {
 }
 
 .navbar2 {
-  border: solid 10px blue;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 15px;
-  border-top: solid 10px orangered;
-  border-left: solid 10px orangered;
-  border-right: solid 10px orangered;
 }
 
-a:hover {
+.nav-link {
+  transition: 1s;
+  border-radius: 8px;
+}
+.nav-link:hover {
   background-color: orangered;
-  border: dashed 2px orangered;
+  color: white;
 }
 
 .ultimasNovedades {
-  background-color: blue;
+  background-color: black;
   color: orangered;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
   padding: 20px;
+  width: 100%;
 }
 .ultimasNovedades h2 {
   font-size: 45px;
@@ -50,28 +75,58 @@ a:hover {
 }
 
 .cardimg {
-  border: blue 10px solid;
+  border: blue 2px solid;
+}
+
+footer {
+  background-color: white;
 }
 
 .final1 {
-  background-color: orangered;
   padding-bottom: 20px;
   font-size: 20px;
 }
 
 .final2 {
-  background-color: orangered;
-  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 20px;
 }
 
-.ultimasNovedades2 {
-  background-color: orangered;
-  color: blue;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 20px;
+.contenedorDeTarjetas {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0px;
+  background-color: blue;
+}
+.contenedorDeTarjetas .row {
+  gap: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  border: 2px solid white;
+  padding: 20px 0px;
+}
+.contenedorDeTarjetas .row .card {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+}
+.contenedorDeTarjetas .row .card img {
+  width: 200px;
+}
+
+.estilosTitulos {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.segundaFila {
+  margin-bottom: 100px;
 }
 
 .navbar1 {
@@ -84,14 +139,54 @@ a:hover {
   border-right: solid 10px blue;
 }
 
-.contacto {
-  background-image: url(../img/opiniones.jpg);
-  background-repeat: repeat;
+#cuerpoSinFondo {
+  background: white;
+}
+
+.contenedorFormulario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+}
+.contenedorFormulario .contededorFormularioCentrado {
+  width: 40%;
+  background-color: white;
+  height: 500px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px 30px;
+}
+.contenedorFormulario .contededorFormularioCentrado .centrarBotones {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.contenedorFormulario .contededorFormularioCentrado .centrarBotones .contenedorBotonesFormulario {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contenedorTextoContacto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  padding: 50px 0px;
+}
+
+.centrarTextoContacto {
+  width: 50%;
+  text-align: center;
 }
 
 .textoContacto {
   font-size: 20px;
-  color: blue;
+  color: orangered;
 }
 
 .whats {
@@ -113,11 +208,6 @@ a:hover {
   font-size: 30px;
 }
 
-.acercaDeNosotros {
-  background-image: url(../img/a80cc3a0a3acd9e4db805fb13bbb1524.jpg);
-  background-repeat: repeat;
-}
-
 .contrato {
   border: 2px black solid;
 }
@@ -130,21 +220,9 @@ li {
   font-size: 20px;
 }
 
-.fondoIndex {
-  background-color: black;
-}
-
 .nosotros1 {
   color: orangered;
   font-size: 50px;
-}
-
-.contenedor___venta {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  margin-left: 50px;
-  width: 80%;
 }
 
 .centrar___contenedores {
@@ -154,7 +232,7 @@ li {
   flex-wrap: wrap;
   height: 100%;
   gap: 10%;
-  padding: 0px 30px;
+  padding: 50px 30px;
 }
 
 .contenedor___producto---venta {
@@ -168,6 +246,7 @@ li {
   position: relative;
   transition: 0.5s;
   margin-bottom: 20px;
+  background-color: white;
 }
 .contenedor___producto---venta:hover {
   transform: translateY(-10px);
@@ -203,6 +282,20 @@ li {
   align-items: center;
   padding: 10px;
   transition: 0.5s;
+}
+
+@media (max-width: 1000px) {
+  .contenedorFormulario .contededorFormularioCentrado {
+    width: 60%;
+  }
+  .contenedorTextoContacto {
+    height: auto;
+  }
+}
+@media (max-width: 700px) {
+  .contenedorFormulario .contededorFormularioCentrado {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=mainstyle.css.map */
